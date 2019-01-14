@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>회원가입</title>    
+    </head>
+    <body>
+    <form action="test.html">
+        <table border="1">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="text">
+                    <input type="button" value="중복검사"> 
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>주민번호</td>
+                <td><input type="text" name="text">예)000000-0000000</td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="email" name="email" size="30"></td>
+            </tr>
+            <tr>
+                <td>집전화</td>
+                <td><input type="text" name="text"> - <input type="text" name="text"> - <input type="text" name="text"></td>
+            </tr>
+            <tr>
+                <td>휴대전화</td>
+                <td><input type="text" name="text"> - <input type="text" name="text"> - <input type="text"name="text"></td>
+            </tr>
+            <tr>
+                <td>주소검색</td>
+                <td><input type="text" name="text"><input type="button" value="검색하기"> (주소입력:송파동, 당산동,..)</td>
+            </tr>
+                <td>주소</td>
+                <td>
+                    <select name="loc">
+                        <option value="seoul">서울특별시</option>
+                        <option value="busan">부산광역시</option>
+                        <option value="daegu">대구광역시</option>
+                        <option value="ulsan">울산광역시</option>
+                        <option value="daejeon">대전광역시</option>
+                        <option value="kwangju">광주광역시</option>
+                        <option value="incheon">인천광역시</option>
+                     </select>
+                </td>     
+            <tr>
+                <td>상세주소</td>
+                <td><input type="text" name="text" size="100"></td>
+            </tr>    
+            <tr>
+                <td>학력</td>
+                <td>
+                    <select name="loc">
+                            <option value="middle">중졸</option>
+                            <option value="high">고졸</option>
+                            <option value="university">대졸</option>
+                            <option value="college">전문대졸</option>
+                            <option value="etc.">기타</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>홍보매체</td>
+                <td>
+                    <select name="loc">
+                        <option value="#">어떻게 알게 되었나요?</option>
+                        <option value="newspa">신문</option>
+                        <option value="tvads">TV광고</option>
+                        <option value="internet">인터넷</option>
+                        <option value="etc.">기타</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>   
+                <td>메일 수신</td>
+                <td><input type="checkbox" value="yes">네,KH교육정보원 수신에 동의합니다.</td>
+            </tr> 
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="password"> 확인 <input type="password" name="password"></td>
+            </tr>     
+        </table> 
+        <input type="reset">
+        <input type ="submit" value="전송">             
+    </form>
+    </body>
+</html>

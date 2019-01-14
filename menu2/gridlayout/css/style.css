@@ -1,0 +1,41 @@
+
+.grid-container{
+    border:10px solid rgb(83, 83, 207);
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    text-align: center;
+    
+    padding: 5px;
+  
+
+}
+.grid-item{
+        background-color: skyblue;
+        border:1px solid black;
+        padding:20px;
+        font-size: 30px;
+       
+        
+}
+.header{
+    grid-column: 1 / 3 span;
+}
+.aside{
+    grid-column : 4 / 1 span;
+    grid-row: 1 / 2 span;
+}
+.nav{
+   
+    grid-row: 2 / 2 span;
+}.photo{
+    grid-column: 2 / 2 span;
+    grid-row : 2 / 1 span;
+}
+.section{
+    grid-column: 2 / 3 span;
+    grid-row : 3 / 1 span;
+}
+.footer{
+     grid-column: 1 / 4 span;
+}
+
