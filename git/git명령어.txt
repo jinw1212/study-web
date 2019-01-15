@@ -1,0 +1,34 @@
+git  설치
+github가입 - 클라우드 저장소
+
+프로젝트 생성
+git (1) 버전관리 (2) 협업도구 (3)웹서버 저장
+
+$ git init (시작) 
+- 숨긴 폴더  .git
+
+$ git add .
+- 숨긴 폴더에 파일 저장
+
+$ git config --global user.name "cos"
+$ git config --global user.email "cos@naver.com"
+- 내가 누군지 알려줌.
+
+$ git remote add origin 깃주소
+- github과 연결
+
+$ git remote set-url origin 깃주소
+- 혹시 remote를 잘못했으면!!
+
+$ git commit -m "설명"
+- 버전 생성
+
+$ git push origin master
+- 업로드(github 아이디,비번)
+
+$ git pull origin master
+- 다운로드
+
+$ git clone 주소
+
+
