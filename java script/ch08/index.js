@@ -6,7 +6,3 @@ function addDiv(){
     card_list.append(newDiv);
 }
 
-addDiv();
-addDiv();
-addDiv();
-addDiv();
