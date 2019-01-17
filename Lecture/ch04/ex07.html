@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            border: 1px solid black;
+            height: 100px;
+        }
+
+        nav {
+            border: 1px solid red;
+            height: 100px;
+            width: 20%;
+            float: left;
+        }
+
+        main {
+            border: 1px solid blue;
+            height: 100px;
+            width: 60%;
+            float: left;
+        }
+
+        aside {
+            border: 1px solid blue;
+            height: 100px;
+            width: 20%;
+            float: left;
+        }
+
+        section {
+            border: 1px solid slategray;
+            height: 100px;
+            clear: both;
+        }
+
+        footer {
+            border: 1px solid tomato;
+            height: 100px;
+            clear: both;
+        }
+
+
+
+
+        .box1{
+            display: inline-block;
+            width:40%;
+            background-color: aqua;
+            height:100%;
+        }
+        .box2{
+            display: inline-block;
+            width:10%;
+            background-color: yellow;
+            height:100%;
+        }
+        .box3{
+            display: inline-block;
+            width:48%;
+            background-color: red;
+            height:100%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="box1">박스1</div>
+        <div class="box2">
+            <div>
+                로고
+            </div>
+        </div>
+        <div class="box3">박스3</div>
+    </header>
+    <nav>
+        네브
+    </nav>
+    <main>
+        메인
+    </main>
+    <aside>
+        <div>
+            어사이드1
+        </div>
+        <div>
+            어사이드2
+        </div>
+    </aside>
+    <section>
+        섹션
+    </section>
+    <footer>
+        푸터
+    </footer>
+</body>
+
+</html>

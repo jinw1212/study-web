@@ -1,0 +1,32 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.nav__columns {
+    margin: 10px 10px;
+    display: flex;
+}
+
+.nav__people {
+    flex:1;
+    text-align: center;
+}
+
+.nav__chat {
+    flex:1;
+    text-align: center;
+}
+
+.nav__tag {
+    flex:1;
+    text-align: center;
+}
+
+.nav__more {
+    flex:1;
+    text-align: center;
+}

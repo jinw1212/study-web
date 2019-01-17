@@ -1,0 +1,31 @@
+.friends {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.friends__row {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.friends__row > .friends__left > img { 
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.friends__row > .friends__center {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.friends__row > .friends__center > .friends__name { 
+   
+}
+
+.friends__row > .friends__center > .friends__introduce { 
+    font-size: 9px;
+}

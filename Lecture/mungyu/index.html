@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            margin:0 auto;
+            width:800px;
+        }
+
+        .container div{
+            text-align: center;
+        }
+
+        .title {
+            color: rgb(224, 110, 110);
+        }
+
+        button {
+            background-color: rgb(224, 110, 110);
+            color:white;
+            border-radius: 10px;
+            width:200px;
+            height:30px;
+        }
+        .sub {
+            margin:0 0 10px 0;
+        }
+
+        .grid-container {
+            display:grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 30px;
+            margin:0 30px;
+        }
+
+        .img-sub {
+            position:relative;
+        }
+
+        .text {
+            position:absolute;
+            width:100%;
+            top:80px;
+            font-size:30px;
+            font-weight: 600;
+            color:white;
+        }
+
+        img {
+            width:100%;
+            height:100%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <h2>Meet Guidebooks</h2>
+    </div>
+    <div class="sub">
+        Discover hundreds of local spots recommended by Airbnb hosts
+    </div>
+    <div class="grid-container">
+        <div class="img-sub">
+            <div class="text">San Francisco</div>
+            <img src="images/img1.jpg">
+        </div>
+        <div class="img-sub">
+            <div class="text">New York</div>
+            <img src="images/img2.jpg">
+        </div>
+        <div class="img-sub">
+            <div class="text">London</div>
+            <img src="images/img3.jpg">
+        </div>
+    </div>
+    <div>
+        <button>See All Guidebooks</button>
+    </div> 
+    <div class="title">
+        <h2>Just for the weekend</h2>
+    </div>
+    <div class="sub">
+        Discover new, inspiring places close to home.
+    </div>
+    <div class="grid-container">
+        <div class="img-sub">
+            <div class="text">Napa</div>
+            <img src="images/img4.jpg">
+        </div>
+        <div class="img-sub">
+            <div class="text">Sonoma</div>
+            <img src="images/img5.jpg">
+        </div>
+        <div class="img-sub">
+            <div class="text">San Francisco</div>
+            <img src="images/img6.jpg">
+        </div>
+    </div>
+    <div>
+        <button>See All Destinations</button>
+    </div>
+</div> 
+</body>
+</html>
