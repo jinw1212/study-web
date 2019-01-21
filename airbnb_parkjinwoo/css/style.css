@@ -10,7 +10,7 @@ header
     background-image: url("../image/header_backgroundimage.jpg");
     background-size: 100% 100%;
     width: 100%;
-    height: 600px;
+    height: 1000px;
     
 }
 nav{
@@ -46,19 +46,26 @@ nav .logo img{
         display:none;
     }
 }
-.form{
+.formfiled{
     background-color:white;
     width:450px;
-    height:300px;
+    height:400px;
     margin:10% 0 0 10%;
+    border-radius:5px;
+    padding:20px;
+}
+.formfiled .ff{
+    font-size: 30px;
+    font-weight: 600;
 }
 .exp{
-    display: block;
+    display: inline-block;
     color: white;
     width:450px;
     height:50px;
-    margin:10px 0 0 120px;
-    padding: 0 0 0 40px;
+    margin:10px 0 0 10%;
+    padding:auto;
+    text-align: center;
 }
 .search{
     background-color: bisque;
@@ -144,8 +151,6 @@ main .m2 a{
     display:grid; 
     margin:0 auto;
     padding: 20px 0 0 0;
-    
-       
 }
 .search-3{
     display:grid;
@@ -167,8 +172,6 @@ main .m2 a{
     border-radius: 5px;
     margin:10px 0 0 20px;
     font-size: 16px;
-  
-
 }
 .search-3 span:nth-child(1){
     font-size:30px;
@@ -300,8 +303,26 @@ main .m2 a{
 }
 p:nth-child(2){
     font-size:15px;
-    
-    
 }
+.filed{
+    display:grid;
+    font-size: 10px; 
+   
+}
+table input{
+    height:50px;
+    width:100%;
+    border-radius:5px; 
+}
+input[type=submit]{
+    width:70px;
+    height:40px;
+    background-color:#FF5a5F;
+    color:white;
+   border: none;
+   margin: 10px 20px 0 125px;
 
-
+}
+td{
+    width:100%;
+}
