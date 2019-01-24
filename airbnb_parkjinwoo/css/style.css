@@ -2,22 +2,23 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    
 }
     
 header 
     {
-    background-image: url("../image/header_backgroundimage.jpg");
-    background-size: 100% 100%;
+    background-image: url("../images/header_backgroundimage.jpg");
+    background-size: cover;
     width: 100%;
     height: 1000px;
+    margin:0 auto;
+    position: relative; 
     
 }
 nav{
     display:grid;
     grid-template-columns:  auto auto;
     justify-content: space-between;
-
+    padding: 20px auto;
     width:100%;
 }
 nav .logo a{
@@ -39,53 +40,73 @@ nav .logo img{
     display:inline-block;
     list-style-type: none;
     padding-top: 20px;
+    height:40px;
+    
+}
+.logo li a:hover{
+    text-decoration:underline;
+    
+    
 }
 
 @media(max-width:800px){
-    nav .logo li{
-        display:none;
+    header section .formfiled{
+        width: 100% ;
+        margin:0px 0px;
+        position: relative;
+        top:50px;
+       display:inline-block;
     }
 }
 .formfiled{
+    display:block;
     background-color:white;
     width:450px;
     height:400px;
     margin:10% 0 0 10%;
     border-radius:5px;
     padding:20px;
+   
 }
 .formfiled .ff{
     font-size: 30px;
     font-weight: 600;
+    color: black;
 }
 .exp{
     display: inline-block;
     color: white;
     width:450px;
     height:50px;
-    margin:10px 0 0 10%;
-    padding:auto;
+    margin:20px 0 0 0px;
     text-align: center;
+    position: absolute;
+}
+.material-icons{
+    position: relative;
+    top:5px;
 }
 .search{
-    background-color: bisque;
+   margin:20px auto;
     display: grid;
     font-size: 24px;
     font-weight: 600;
     width: 1200px;
-    margin: 0 auto;
+    
+    
 }
 .m1{
     display: grid;
-    margin:0 auto;
-    padding: 20px 0 0 0;
+   
+  
 }
 .search-1{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding:20px 200px 0 0;
+    
     margin : 0 auto;
     width:1200px;
+    position:relative;
 }
 .tb-1{
     display:grid;
@@ -102,47 +123,59 @@ nav .logo img{
     font-weight: 600;
 }
 .tb-1-img1 {
-    background-image: url("../image/search1_tb1.jpg");
+    background-image: url("../images/search1_tb1.jpg");
     background-size: cover;
    
 }
 .tb-1-img2 {
-    background-image: url("../image/search1_tb2.jpg");
+    background-image: url("../images/search1_tb2.jpg");
     background-size: cover;
    
 }
 
 .tb-1-img3 {
-    background-image: url("../image/search1_tb3.jpg");
+    background-image: url("../images/search1_tb3.jpg");
     background-size: cover;
     
 }
 
 .m2{
     display:grid;
-    margin:0 auto;
-    padding: 20px 0 0 0;
+    margin:20px auto;
+  
 }
 .search-2{
     display:grid;
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
-    padding:20px 0 0;
+   
     margin : 0 auto;
     width:1200px;
-    height:250px;
+    height:300px;
 }
 .tb-2{
     display:grid;
-    grid-template-rows: 5fr 1fr;
+    grid-template-rows: 7fr 3fr;
     grid-gap: 10px;
     width:350px;
-   
+    height: 300px;
+    margin: 20px auto;
+    font-weight:1000 ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.tb-2 >div{
+p{
+    color: darkblue;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.tb-2 div{
     display:block;
+    font-size: 14px;
     
+  
 }
+
 main .m2 a{
     text-decoration: none;
 }
@@ -150,14 +183,15 @@ main .m2 a{
 .m3{
     display:grid; 
     margin:0 auto;
-    padding: 20px 0 0 0;
+    padding: 20px auto;
 }
 .search-3{
+   
     display:grid;
-    padding:20px 0 0 0;
+    padding:20px auto;
     margin :0 auto;
     width:1200px;
-    background-image:url("../image/search3.jpg") ;
+    background-image:url("../images/search3.jpg") ;
     background-size: cover;
     height:350px;
 }
@@ -185,33 +219,37 @@ main .m2 a{
     grid-template-columns: auto auto auto auto;
     grid-gap:20px;
     padding:20px auto;
-    margin :20px auto;
+    margin :0 auto;
     width:1200px;
 
 }
 .tb-4{
     display:grid;
-    grid-template-rows: 5fr 1fr;
+    grid-template-rows: 5fr 3fr;
     grid-gap :10px;
     width:280px;
-   
+    height:280px;
+}
+.tb-4 div a{
+        color:darkblue;
+        font-size:12px;
+        font-weight:600;
 }
 .tb-4 >div{
-    display:block;
-    border: 1px solid black;
-    
+    display:block;    
 }
 .pic1{
-    background-image: url("../image/pic1.jpg");
+    background-image: url("../images/pic1.jpg");
     background-size: cover;
 }
 .pic2{
-    background-image: url("../image/pic2.jpg");
+    background-image: url("../images/pic2.jpg");
     background-size: cover;
 }
 .pic3{
-    background-image: url("../image/pic3.jpg");
+    background-image: url("../images/pic3.jpg");
     background-size: cover;
+    
 }
 
 .pic4{
@@ -301,28 +339,35 @@ main .m2 a{
     font-weight: 600;
     color:white;
 }
-p:nth-child(2){
-    font-size:15px;
-}
+
+
 .filed{
     display:grid;
     font-size: 10px; 
-   
+  
 }
 table input{
     height:50px;
     width:100%;
     border-radius:5px; 
 }
-input[type=submit]{
+
+input[type="submit"]{
     width:70px;
     height:40px;
     background-color:#FF5a5F;
     color:white;
    border: none;
    margin: 10px 20px 0 125px;
+   font-weight: 600 ;
 
 }
 td{
     width:100%;
+    font-weight:600;
+    font-size: 15px;
 }
+table{
+    margin:10px auto;
+}
+

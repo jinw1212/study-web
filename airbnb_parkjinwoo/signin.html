@@ -4,9 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>로그인</title>
+    <title> 로그인</title>
+    <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #484848;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            background-color: rgb(177, 168, 168);
+        }
+        form {
+            width: 560px;
+            height: 540px;
+            text-align: center;
+            margin: 100px  auto;
+            padding: 50px 0 40px 0; 
+            font-size: 13px;
+            background-color: white;
+            }
+
+        table {
+            margin: 0 auto;        
+        }
+                   
+        .icon_x {
+            width: 16px;
+            height: 16px;
+            padding: 0 0 5px 5px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        a {
+        text-decoration: none;
+        color: #00a699;
+        }
+        
+        .text_b {
+            font-weight: bold;
+        }
+        
+        input {
+        width: 500px;
+        height: 50px;
+        border: 1px solid #767676;
+        font-size: 14px;
+        }
+        
+        input.email {
+            background-image: url("https://3.bp.blogspot.com/-OKs7Y5RSc9w/U4K11KCuM0I/AAAAAAAAALQ/5ozidulwlOM/s1600/icon-letter-mail.png");
+            background-repeat: no-repeat;
+            background-size: 18px 17px;
+            background-position: 460px 17px;
+        }
+        
+        input.pw {
+            background-image: url("https://cdn.icon-icons.com/icons2/1302/PNG/512/blockedpadlock_85757.png");
+            background-repeat: no-repeat;
+            background-size: 18px 18px;
+            background-position: 460px 17px;
+        }
+        
+        .td_pd {
+            padding: 5px 0;
+        }
+        
+        .check{
+            width: 18px;
+            height: 18px;
+        }
+        
+        .fb {
+            height: 45px;
+            background-color:rgba(6, 65, 175, 0.767);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 7px auto;
+            border: none;
+            border-radius: 5px;
+            background-image: url("http://mblogthumb4.phinf.naver.net/20140122_187/psy0707_13903661103132GoiQ_PNG/FB-f-Logo__blue_1024.png?type=w2");
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+            background-position: 133px 8px;
+        }
+        
+        .gg {
+            height: 45px;
+            background-color:white;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 7px auto;
+            border: 2px solid #767676;
+            border-radius: 5px;
+            background-image: url("http://www.sclance.com/pngs/google-+-logo-png/google_+_logo_png_592082.jpg");
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: 152px 10px;
+        }
+        
+        .login {
+            background-color:#ff6a6f;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 7px auto;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .left {
+            text-align: left;
+        }
+        
+        .right {
+            text-align: right;
+        }
+        
+        div {
+            margin: 0 5px;
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <form action="index.html">
+        <div class="icon_x">
+            <a href="index.html"><img src="data:image/png;base64,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"></a>
+        </div>
+        <table>
+            <tr>
+                <td colspan="2"><input class="fb" type="button" value="페이스북 계정으로 로그인"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="gg" type="button" value="구글 계정으로 로그인"></td>
+            </tr>
+            <tr>
+                <td class="td_pd" colspan="2"><div><hr></div></td>
+            </tr>
+            <tr>
+                <td class="td_pd" colspan="2">
+                    <input class="email" type="email" name="email" placeholder="&nbsp;이메일 주소">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_pd" colspan="2">
+                    <input class="pw" type="password" name="password" placeholder="&nbsp;비밀번호">
+                </td>
+            </tr>
+            <tr></tr>
+                <td class="td_pd"><div class="left"><input class="check" type="checkbox" name="pw_save" value="save">&nbsp;비밀번호 저장</div></td>
+                <td class="td_pd"><div class="right"><a href="#">비밀번호 보기</a></div></td>
+            </tr>
+            <tr>
+                <td colspan="2"><div class="left"><a class="text_b text_size" href="#">전화번호로 로그인 · 비밀번호가 생각나지 않으세요?</a></div></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="login" type="submit" value="로그인"></td>
+            </tr>
+            <tr>
+                <td class="td_pd" colspan="2"><div><hr></div></td>
+            </tr>
+            <tr>
+                <td class="td_pd" colspan="2">에어비앤비 계정이 없으세요? <a class="text_b" href="signup.html">회원 가입</a></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>

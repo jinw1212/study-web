@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>숙소 트립, 장소를 한곳에 AirBnB</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" sizes="76x76" type="images/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="image/logo1.png" width="60px" height="50px" >
+                <img src="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico" width="60px" height="50px" >
             </div>    
             <div class="logo">
                 <ul>
@@ -25,45 +27,48 @@
         </nav>
         <section>
             <div class="formfiled">
-                <p class="ff">특색 있는 숙소와 트립을 </p>
-                <p class="ff">예약해보세요.</p>
-                <div class="field">
-                    <table>
-                     <form action="">
-                       <tr>
-                           <td colspan="2">목적지</td>
+                <div class="formfiled-sub">
+                    <p class="ff">특색 있는 숙소와 트립을 </p>
+                    <p class="ff">예약해보세요.</p>
+                    <div class="field">
+                        <table>
+                        <form action="#">
+                        <tr>
+                            <td colspan="2">목적지</td>
+                            </tr> 
+                        <tr> 
+                            <td colspan="2"><input type="text" name="text" value=" 모든위치">
+                            </td>
+                        </tr>
+                        <tr> <td>체크인</td> 
+                                <td>체크아웃</td>
                         </tr> 
-                       <tr> 
-                           <td colspan="2"><input type="text" name="text" value=" 모든위치">
-                           </td>
-                       </tr>
-                       <tr> <td>체크인</td> 
-                            <td>체크아웃</td>
-                    </tr> 
+                            <td>
+                            <input type="date"  name="text"  value=" 년/월/일" >
+                        </td>
                         <td>
-                        <input type="date"  name="" value=" 년/월/일" >
-                       </td>
-                       <td>
-                        <input type="date" name="text" value=" 년/월/일">
-                        </td>   
-                    </tr>
-                    <tr><td colspan="2">인원</td></tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="text" name="text" value=" 인원">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><input type="submit" width="80px" height="50px" value="검색">
-                        </td>
-                    </tr>
-                    </form>
-                </table>
-                </div>  
+                            <input type="date" name="text"  value=" 년/월/일">
+                            </td>   
+                        </tr>
+                        <tr><td colspan="2">인원</td></tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="text" value=" 인원">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" width="80px" height="50px" value="검색">
+                            </td>
+                        </tr>
+                        </form>
+                    </table>
+                    </div>  
+                </div>
+                <div class="exp"> <i class="material-icons">home</i>
+                    여행을 즐기는 동안 수입을 올려보세요>
+                </div>
             </div>
-            <div class="exp">여행을 즐기는 동안 수입을 올려보세요></div>
-            
         </section>
     </header>
     <main>
@@ -105,21 +110,33 @@
                         <div class="pic1">
     
                         </div>
-                        <div><a href="#">집전체숙소</a></div>
+                        <div clss="tb-bt">
+                            <a href="#">집 전체 숙소
+                                <p>필요한 편의시설이 모두 갖춰진 숙소에서</p>
+                                <p>친구들 또는 가족과 함께 머물러보세요.</p>
+                            </a>
+                        </div>
                     </DIV>
                     <DIV class="tb-2">
                         <div class="pic2">
     
                         </div>
-                        <div><a href="#">에어비엔비플러스숙소</a>
-                            </div>
+                        <div calss="tb-bt">
+                            <a href="#">에어비엔비플러스숙소
+                                <p>편안함과 퀄리티가 검증된 새로운 숙소</p>  
+                                <p>컬랙션</p>
+                            </a>
+                        </div>
     
                     </DIV>
                     <DIV class="tb-2">
                         <div class="pic3">
 
                         </div>
-                        <div><a href="#">부티크호텔</a>
+                        <div class="tb-bt">
+                            <a href="#">부티크호텔
+                               <p>세심한 서비스와 현지의 특색을 살린 편안함</p> 
+                            </a>    
                         </div>
                     </DIV>
                 </div>
@@ -145,42 +162,73 @@
                             <div class="pic4">
         
                             </div>
-                            <div><a href="#">집전체숙소</a></div>
+                            <div>
+                                <a href="#">수영.리마</a><br>
+                                Nada con lobos marinos en su<br>
+                                habitat<br>
+                                1인당 &#8361;54,121 <br>
+                               4.90 ★★★★★ 136
+                            </div>
                         </DIV>
                         <DIV class="tb-4">
                             <div class="pic5">
         
                             </div>
-                            <div><a href="#">에어비엔비플러스숙소</a>
-                                </div>
-        
+                            <div>
+                                <a href="#">비행기 타기 체험.피닉스</a><br>
+                                FLIGHT LESSOS IN OPEN<br>
+                                COCKPIT BIPLANE<br>
+                                1인당 &#8361; 195,895 <br>
+                                5.0 ★★★★★ 102  
+                            </div>
+    
                         </DIV>
                         <DIV class="tb-4">
                             <div class="pic6">
                                 
                             </div>
-                            <div><a href="#">부티크호텔</a>
+                            <div>
+                                <a href="#">당일여행.리스본</a><br>
+                                This is Sintra -a DAY to<br>
+                                Remember!<br>
+                                1인당 &#8361; 85,628<br>
+                                4.91 ★★★★★ 438 <!--http://kor.pe.kr/util/4/charmap.htm 에서 '★'찾아 씀.--> 
                             </div>
                         </DIV>
                         <DIV class="tb-4">
                             <div class="pic7">
                                 
                             </div>
-                            <div><a href="#">부티크호텔</a>
+                            <div>
+                                <a href="#">등산.쿠알라룸푸르</a><br>
+                                2 Hidden Waterfalls + <br>
+                                BatuCaves 5hours<br>
+                                1인당 &#8361; 27,904 <br>
+                                4.95 ★★★★★ 238
                             </div>
                         </DIV>    
                         <DIV class="tb-4">
                             <div class="pic8">
         
                             </div>
-                            <div><a href="#">집전체숙소</a>
+                            <div>
+                                <a href="#">암벽하강.세인트조지</a><br>
+                                Private East Zion Slot Canyon<br>
+                                Tour<br>
+                                1인당 &#8361; 161,121 <br>
+                                4.99 ★★★★★ 218
                             </div>
                         </DIV>
                         <DIV class="tb-4">
                             <div class="pic9">
         
                             </div>
-                            <div><a href="#">에어비엔비플러스숙소</a>
+                            <div>
+                                <a href="#">패러글라이딩.서울</a><br>
+                                양평에서의 패러글라이딩<br>
+                                체험비행<br>
+                                1인당 &#8361; 140,000<br>
+                                4.97 ★★★★★ 204
                             </div>
         
                         </DIV>
@@ -188,14 +236,24 @@
                             <div class="pic10">
                                     
                             </div>
-                            <div><a href="#">부티크호텔</a>
+                            <div>
+                                <a href="#">오토바이타기체험.다낭</a><br>
+                                스쿠터를 타고 손짜 마운틴<br>
+                                (원숭이산)을!<br>
+                                1인당 &#8361; 34,968<br>
+                               4.94 ★★★★★ 51
                             </div>
                         </DIV>
                         <DIV class="tb-4">
                             <div class="pic11">
                                     
                             </div>
-                            <div><a href="#">부티크호텔</a>
+                            <div>
+                                <a href="#">패들보딩.마이애미</a><br>
+                                Miami City Lights Night SUP or<br>
+                                Kayak<br>
+                                1인당 &#8361; 68,390 <br>
+                               4.91 ★★★★★ 493
                             </div>
                         </DIV>
                     
